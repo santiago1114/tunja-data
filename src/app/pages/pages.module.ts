@@ -6,6 +6,7 @@ import { TableroViolenciaComponent } from './tablero-violencia/tablero-violencia
 import { TableroISuicidiosComponent } from './tablero-i-suicidios/tablero-i-suicidios.component';
 import { PagesComponent } from './pages.component';
 import { RouterModule } from '@angular/router';
+import { ComponentsModule } from '../components/components.module';
 
 
 
@@ -19,7 +20,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    ComponentsModule
   ],
   exports: [
     LandingPageComponent,

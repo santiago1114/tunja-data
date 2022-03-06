@@ -14,14 +14,16 @@
       </h1>
       <p class="leading-normal text-2xl mb-8">
         Encuentra aquí implementaciones a partir de datos abiertos de la ciudad
-        de Tunja - Boyacá
+        de Tunja - Boyacá, puedes proponer tu implementación por
+        <a href="mailto:soporte.tic@tunja.gov.co">correo</a> basándote en los
+        datos publicados
       </p>
       <a
         href="https://www.datos.gov.co/browse?Informaci%C3%B3n-de-la-Entidad_Nombre-de-la-Entidad=Alcald%C3%ADa+Municipal+de+Tunja&provenance=official&q=Alcald%C3%ADa+Municipal+de+Tunja&sortBy=relevance"
         class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
       >
         Ver los datos abiertos de Tunja
-    </a>
+      </a>
     </div>
     <!--Right Col-->
     <div class="w-full md:w-3/5 py-6 text-center">
@@ -81,7 +83,12 @@
       ></div>
     </div>
 
-    <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+    <app-descubre-card class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink"
+      *ngFor="let item of tableros"
+      [tablero]="item"
+    ></app-descubre-card>
+
+    <!--  <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
       <div
         class="flex-1 rounded-t rounded-b-none overflow-hidden shadow bg-slate-50"
       >
@@ -90,10 +97,10 @@
           class="flex flex-wrap no-underline hover:no-underline"
         >
           <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-            Secretaría de Protección Social
+            Autor: Dirección de TIC's y Gobierno Digital
           </p>
           <div class="w-full font-bold text-xl text-gray-800 px-6">
-            Información pública, casos de violencia
+            Información pública de la Secretaría de Protección Social, casos de violencia
           </div>
           <p class="text-gray-800 text-base px-6 mb-5">
             Para cada barrio de Tunja encuentra el resumen estadístico de los
@@ -146,6 +153,6 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
