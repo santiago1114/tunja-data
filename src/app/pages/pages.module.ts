@@ -7,6 +7,7 @@ import { TableroISuicidiosComponent } from './tablero-i-suicidios/tablero-i-suic
 import { PagesComponent } from './pages.component';
 import { RouterModule } from '@angular/router';
 import { ComponentsModule } from '../components/components.module';
+import { PreguntasFrecComponent } from './preguntas-frec/preguntas-frec.component';
 
 
 
@@ -15,7 +16,8 @@ import { ComponentsModule } from '../components/components.module';
     LandingPageComponent,
     TableroViolenciaComponent,
     TableroISuicidiosComponent,
-    PagesComponent
+    PagesComponent,
+    PreguntasFrecComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +28,8 @@ import { ComponentsModule } from '../components/components.module';
   exports: [
     LandingPageComponent,
     TableroViolenciaComponent,
-    TableroISuicidiosComponent
+    TableroISuicidiosComponent,
+    PreguntasFrecComponent
   ],
 })
 export class PagesModule { }
