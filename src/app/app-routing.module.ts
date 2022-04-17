@@ -12,10 +12,10 @@ const routes: Routes = [
     component: PagesComponent,
     children: [
       { path: 'inicio', component: LandingPageComponent },
-      { path: 'preguntasfrecuentes', component: PreguntasFrecComponent },
+      { path: 'preguntasfrecuentes', component: PreguntasFrecComponent, data: {animation: 'PreguntasPage'} },
       { path: 'tableros/proteccion-social/intentos-suicidio', component: TableroISuicidiosComponent },
       { path: 'tableros/proteccion-social/casos-violencia', component: TableroViolenciaComponent },
-      { path: '', pathMatch: 'full', redirectTo: 'inicio' },
+      { path: '', pathMatch: 'full', redirectTo: 'inicio', data: {animation: 'InicioPage'} },
     ]
   },
   { path: '**', component: PagesComponent },
