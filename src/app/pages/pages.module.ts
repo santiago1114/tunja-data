@@ -8,6 +8,7 @@ import { PagesComponent } from './pages.component';
 import { RouterModule } from '@angular/router';
 import { ComponentsModule } from '../components/components.module';
 import { PreguntasFrecComponent } from './preguntas-frec/preguntas-frec.component';
+import { TableroInstalacionesComponent } from './tablero-instalaciones/tablero-instalaciones.component';
 
 
 
@@ -17,7 +18,8 @@ import { PreguntasFrecComponent } from './preguntas-frec/preguntas-frec.componen
     TableroViolenciaComponent,
     TableroISuicidiosComponent,
     PagesComponent,
-    PreguntasFrecComponent
+    PreguntasFrecComponent,
+    TableroInstalacionesComponent
   ],
   imports: [
     CommonModule,

@@ -20,6 +20,12 @@ export class LandingPageComponent implements OnInit {
       'Encuentra el resumen estadístico de los intentos de suicidio para los dos ultimos años (2020,2021) en la ciudad de Tunja',
       '/tableros/proteccion-social/intentos-suicidio'
     ),
+    new TableroModel(
+      "Dirección de TIC's y gobierno digital",
+      'Información pública Instalaciones de Internet - La Conectividad nos Une',
+      'Del programa de la Alcaldia de Tunja, la conectividad nos une, se muestran las estadisticas para instalaciones del año 2022',
+      '/tableros/direccion-tics/instalaciones-internet'
+    ),
   ];
 
   constructor() {}
