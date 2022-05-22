@@ -6,6 +6,7 @@ import { PreguntasFrecComponent } from './pages/preguntas-frec/preguntas-frec.co
 import { TableroISuicidiosComponent } from './pages/tablero-i-suicidios/tablero-i-suicidios.component';
 import { TableroInstalacionesComponent } from './pages/tablero-instalaciones/tablero-instalaciones.component';
 import { TableroViolenciaComponent } from './pages/tablero-violencia/tablero-violencia.component';
+import { TableroWifiComponent } from './pages/tablero-wifi/tablero-wifi.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,7 @@ const routes: Routes = [
       { path: 'tableros/proteccion-social/intentos-suicidio', component: TableroISuicidiosComponent },
       { path: 'tableros/proteccion-social/casos-violencia', component: TableroViolenciaComponent },
       { path: 'tableros/direccion-tics/instalaciones-internet', component: TableroInstalacionesComponent },
+      { path: 'tableros/direccion-tics/zonas-wifi', component: TableroWifiComponent },
       { path: '', pathMatch: 'full', redirectTo: 'inicio', data: {animation: 'InicioPage'} },
     ]
   },

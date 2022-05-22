@@ -26,6 +26,12 @@ export class LandingPageComponent implements OnInit {
       'Del programa de la Alcaldia de Tunja, la conectividad nos une, se muestran las estadisticas para instalaciones del año 2022',
       '/tableros/direccion-tics/instalaciones-internet'
     ),
+    new TableroModel(
+      "Dirección de TIC's y gobierno digital",
+      'Información pública Usuarios Conectados en Zonas Wifi',
+      'Del programa de la Alcaldia de Tunja, la conectividad nos une, se muestran las estadisticas para conexiones en zonas Wi-Fi del año 2021 al 2022',
+      '/tableros/direccion-tics/zonas-wifi'
+    ),
   ];
 
   constructor() {}

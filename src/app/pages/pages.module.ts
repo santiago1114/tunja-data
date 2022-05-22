@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { ComponentsModule } from '../components/components.module';
 import { PreguntasFrecComponent } from './preguntas-frec/preguntas-frec.component';
 import { TableroInstalacionesComponent } from './tablero-instalaciones/tablero-instalaciones.component';
+import { TableroWifiComponent } from './tablero-wifi/tablero-wifi.component';
 
 
 
@@ -19,7 +20,8 @@ import { TableroInstalacionesComponent } from './tablero-instalaciones/tablero-i
     TableroISuicidiosComponent,
     PagesComponent,
     PreguntasFrecComponent,
-    TableroInstalacionesComponent
+    TableroInstalacionesComponent,
+    TableroWifiComponent
   ],
   imports: [
     CommonModule,
