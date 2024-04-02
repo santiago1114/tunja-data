@@ -1,0 +1,5 @@
+# Ignore all folder contents
+*/
+
+# But allow the "data" folder and its contents
+!/data/
